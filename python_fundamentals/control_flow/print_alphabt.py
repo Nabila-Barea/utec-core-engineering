@@ -1,2 +1,4 @@
 #!/usr/bin/env python3
-print("abcdefghijklmnopqrstuvwxyz".replace("q", "").replace("e", ""))
+for letter in range(97, 123):
+    if letter != 101 and letter != 113:
+        print("{:c}".format(letter), end="\n" if letter == 122 else "")
