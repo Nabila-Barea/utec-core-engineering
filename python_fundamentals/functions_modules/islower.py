@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
 
 def islower(c):
-    return ord(c) >= 97 and ord(c) <= 122
+    return (isinstance(c, str) and len(c) == 1
+            and ord('a') <= ord(c) <= ord('z'))
