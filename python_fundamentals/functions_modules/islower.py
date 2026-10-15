@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
 def islower(c):
-    return (isinstance(c, str) and len(c) == 1
-            and ord('a') <= ord(c) <= ord('z'))
+    if not isinstance(c, str) or len(c) != 1:
+        return False
+    return ord('a') <= ord(c) <= ord('z')
